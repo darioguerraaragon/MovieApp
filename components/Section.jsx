@@ -1,29 +1,25 @@
 import React from 'react'
 import MoviesCards from './MoviesCards'
 
-const Section = ({data}) => { 
-  console.log(data)
+const Section = ({ data }) => {
 
-  let box = []
+  console.log({ data })
 
-  if(data == undefined){
-    null
-  }else{
-    data.forEach(el => {
-        box.push(1)
-    });
-  }
+  if ( !data ) return <h1>No hay data</h1>
 
-  console.log(box)
-  
   return (
     <section>
       <article>
-        {data == undefined?null:data.map((el)=>(<MoviesCards key={el.id}/>))}
-        {box.map((el)=>(<MoviesCards/>))}
-      </article>     
+        {
+          data.map(movie => (
+            <MoviesCards
+              key={movie.id} 
+              movie={ movie }/>
+          ))
+        }
+      </article>
     </section>
   )
-  }
+}
 
 export default Section
