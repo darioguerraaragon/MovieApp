@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=8t_xd3HF8ys   para colocar el key de la pelicula para enlacar a youtube
+
+https://image.tmdb.org/t/p/w500/{"poster_path"}  para obtener la imagen de la pelicula
+
+https://api.themoviedb.org/3/search/movie?api_key=5039d81fe0701d5eb97f27754ec17b37&query=spiderman para obtener las peliculas
