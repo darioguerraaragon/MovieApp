@@ -3,24 +3,17 @@ import MoviesCards from './MoviesCards'
 
 const Section = ({data}) => { 
   console.log(data)
-
-  let box = []
-
-  if(data == undefined){
-    null
-  }else{
-    data.forEach(el => {
-        box.push(1)
-    });
-  }
-
-  console.log(box)
+  if(!data)return <h1>There is no data</h1>
   
   return (
     <section>
       <article>
-        {data == undefined?null:data.map((el)=>(<MoviesCards key={el.id}/>))}
-        {box.map((el)=>(<MoviesCards/>))}
+        {data == undefined?null:data.map((movie)=>(
+          <MoviesCards 
+            key={movie.id} 
+            movie={movie} 
+
+          />))}
       </article>     
     </section>
   )

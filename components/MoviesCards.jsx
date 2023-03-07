@@ -3,21 +3,18 @@ import { Link, BrowserRouter } from 'react-router-dom'
 
 const MoviesCards = ({ movie }) => {
 
-  console.log({ movie })
-
-  const { original_title } = movie
+  const { title , poster_path } = movie
 
   return (
     <div className='MovieCard'>
 
-      { original_title }
-
-      <img></img>
-      <p><b></b></p>
+      <img src={`${poster_path}`}/>
+      <p><b>{title}</b></p>
       <div className='Clasificacion'>Clasificacion</div>
       <BrowserRouter>
         <Link to='/'>Ver!</Link>
       </BrowserRouter>
+      
     </div>
   )
 }

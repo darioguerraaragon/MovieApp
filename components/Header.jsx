@@ -20,9 +20,6 @@ const Header = ({ setData }) => {
 
     return (
         <header>
-            <div className='d-none'>
-
-            </div>
             <nav>
                 <img></img>
                 <div className='searchNav'>
@@ -41,7 +38,6 @@ const Header = ({ setData }) => {
                         <Link to="/facebook">Facebook</Link>
                         <Link to="/PayPal">PayPal</Link>
                         <Link to="/Api">Api</Link>
-                        <Link to="/Acount" className='acount'>Acount</Link>
 
                         <Routes></Routes>
                     </BrowserRouter>

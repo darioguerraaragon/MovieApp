@@ -120,10 +120,10 @@ article {
 
 .MovieCard  img {
   height: 50%;
-  width: 80%;
+  width: 90%;
   border-bottom: solid black 1px;
 }
 
-.d-none {
-  display: none;
+.MovieCard p {
+  text-align: center;
 }

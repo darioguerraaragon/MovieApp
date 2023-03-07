@@ -8,10 +8,8 @@ const MovieApp = () => {
 
   return (
     <div>
-        <Header
-          setData={setData} />
-        <Section
-          data={data} />
+        <Header setData={setData} />
+        <Section data={data} />
     </div>
   )
 }
